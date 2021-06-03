@@ -1,0 +1,207 @@
+<!-- 畅言公共 js 代码 start -->
+<script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=<%=theme.changyan.appid%>">
+</script>
+<!-- 畅言公共 js 代码 end -->
+<!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="<% if(theme.changyan.thread_key_type == "id"){ %><%= page.id %><% } else { %><%= page.path %><% } %>"></div>
+<script>
+(function(){
+var appid = '<%= theme.changyan.appid %>';
+var conf = '<%= theme.changyan.conf %>';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();
+</script>
+<style>
+#MZAD_POP_PLACEHOLDER,#pop_ad {
+	margin-top: -250px!important;
+	transform: scale(0)
+}
+
+#feedAv {
+	transform: scale(0);
+	margin-top: -150px!important
+}
+
+.module-cmt-box {
+	padding: 10px 0!important;
+	margin-top: -40px!important
+}
+
+.header-login {
+	left: 90px!important;
+	border: 0!important;
+	border-radius: 0!important;
+	margin-top: 81pt!important;
+	border-radius: 21px!important;
+    color: #2698f3 !important;
+}
+
+.post-wrap-border-l,.post-wrap-border-r,.post-wrap-border-t-l,.post-wrap-border-t-r {
+	display: none
+}
+
+.post-wrap-main {
+	border: 0!important
+}
+
+.post-wrap-w {
+	background: #fafafa;
+    border-radius: 13px;
+}
+
+.btn-fw {
+	background: #2698f3 url(/img/release.svg) center no-repeat!important;
+	width: 60px!important;
+	height: 60px!important;
+	border-radius: 70px;
+	margin-top: -5px!important;
+	margin-right: 40px!important;
+	background-size: 30px!important;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	-webkit-transition: .3s;
+	transition: .3s
+}
+
+.btn-fw:hover {
+	box-shadow: 0 6px 10px rgba(0,0,0,.2)
+}
+
+.block-head-w {
+	margin-top: -20px!important
+}
+
+.section-service-w {
+	height: 0;
+	opacity: 0
+}
+
+.head-img-w {
+	margin: 0!important
+}
+
+.head-img-w img {
+	width: 25px!important;
+	height: 25px!important
+}
+
+.head-img-w img:hover {
+	transition: all .3s;
+	transform: scale(3)
+}
+
+.head-img-w {
+	top: 138px!important;
+	left: 95px!important
+}
+
+.wrap-action-gw {
+	border-bottom: 1px solid #dee4e9!important;
+	padding-top: 30px!important;
+	padding-bottom: 1pc!important
+}
+
+.cmt-list-number,.title-name-gw-tag,.type-lists,.wrap-name-w {
+	display: none!important
+}
+
+.cmt-list-type {
+	margin: 0!important
+}
+
+.build-floor-gw {
+	background: #f0f0f0!important
+}
+
+.block-cont-gw {
+	padding: 20px 0!important;
+	border: 0!important
+}
+
+.section-list-w {
+	width: 95%!important;
+	margin-left: 2%!important
+}
+
+.head-img-gw img:hover {
+	transition: all .3s;
+	transform: scale(.9)
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w div.action-function-w ul li.function-face-w {
+    background-image: url(/img/face.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w ul li.function-face-w {
+    background-image: url(/img/face.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w div.action-function-w ul li.function-uploading-w .effect-w .uploading-b {
+    background-image: url(/img/image.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w ul li.function-uploading-w .effect-w .uploading-b {
+    background-image: url(/img/image.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w div.action-function-w ul li.function-e .effect-w .uploading-b, #SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w div.action-function-w ul li.function-uploading-w:hover .effect-w .uploading-b{
+    background-image: url(/img/image.svg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w div.face-wrapper-dw {
+    background-image: none !important;
+    border-radius: 13px;
+    border: 1px solid #ccc !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w .face-wrapper-dw {
+    top: 24px;
+    left: -10px;
+    display: none;
+    width: 300px;
+    height: 145px;
+    position: absolute;
+    z-index: 2;
+    background: none !important;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w .face-wrapper-dw .action-face-tab-dw ul li.official-face-btn {
+    background-image: url(/img/face.svg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    padding: 2px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+}
+.module-cmt-notice {
+    display: none !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .cbox-prompt-w span.prompt-empty-w, #SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-form-w .form-text-w span.text-null, #SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-minwidth-w div.cont-comment-w a.comment-link-w, #SOHUCS #SOHU_MAIN .module-cmt-float-bar .wrap-cont-w .cont-minwidth-w div.cont-comment-w span.comment-text-w, #SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w div.service-wrap-w a:hover, #SOHUCS #SOHU_MAIN .module-cmt-header .section-cbox-w .block-head-w div.header-login, #SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w .title-user-w .user-wrap-w span.wrap-name-w, #SOHUCS #SOHU_MAIN .module-cmt-list .action-click-gw span.click-disable-eg a em.icon-name-bg, #SOHUCS #SOHU_MAIN .module-cmt-list .block-title-gw ul li div.title-name-gw, #SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .cmt-list-number .comment-number span.cy-number, #SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .cmt-list-number span.comment-number, #SOHUCS #SOHU_MAIN .module-cmt-list .cmt-list-type .type-lists li.active, #SOHUCS #SOHU_MAIN .module-cmt-list .msg-wrap-gw .wrap-action-gw .action-click-gw span a:hover, #SOHUCS #SOHU_MAIN .module-cmt-list .picture-box-gw div.box-action-gw a:hover, #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span a:hover em.icon-name-bg, #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-user-gw span.user-name-gw a {
+ color: #2698f3  !important;
+}
+
+.click-prop-gw {
+    display: none !important;
+}
+</style>

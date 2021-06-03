@@ -1,0 +1,16 @@
+<div class="nexmoe-post-meta nexmoe-post-nav">
+    <% if (page.prev) { %>
+        <div class="nexmoe-post-prev nexmoe-post-nav-item">
+            <a class="nexmoe-post-nav-prev-link" href="<%- url_for(page.prev.path) %>">
+                上一篇：<%= page.prev.title %> 
+            </a>
+        </div>
+    <% } %> 
+    <% if (page.next) { %>
+        <div class="nexmoe-post-next nexmoe-post-nav-item">
+            <a class="nexmoe-post-nav-next-link" href="<%- url_for(page.next.path) %>">
+                下一篇：<%= page.next.title %> 
+            </a>
+        </div>
+    <% } %> 
+</div>

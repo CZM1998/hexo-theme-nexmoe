@@ -1,0 +1,60 @@
+{
+  "_from": "hexo-theme-nexmoe",
+  "_id": "hexo-theme-nexmoe@2.8.0",
+  "_inBundle": false,
+  "_integrity": "sha1-jMo1kbwkTPVEM23nQukj+Ih1a0Q=",
+  "_location": "/hexo-theme-nexmoe",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hexo-theme-nexmoe",
+    "name": "hexo-theme-nexmoe",
+    "escapedName": "hexo-theme-nexmoe",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.nlark.com/hexo-theme-nexmoe/download/hexo-theme-nexmoe-2.8.0.tgz",
+  "_shasum": "8cca3591bc244cf544336de742e923f888756b44",
+  "_spec": "hexo-theme-nexmoe",
+  "_where": "D:\\Project\\WebProject\\docsify\\blog",
+  "author": {
+    "name": "Nexmoe",
+    "url": "https://github.com/nexmoe"
+  },
+  "bugs": {
+    "url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hexo-wordcount": "^6.0.1"
+  },
+  "deprecated": false,
+  "description": "🔥 A special hexo theme.",
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  },
+  "homepage": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+  "keywords": [
+    "hexo",
+    "theme",
+    "nexmoe"
+  ],
+  "license": "Apache-2.0",
+  "main": "package.json",
+  "name": "hexo-theme-nexmoe",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theme-nexmoe/hexo-theme-nexmoe.git"
+  },
+  "scripts": {
+    "eslint": "eslint scripts/ source/js --fix",
+    "test": "echo test"
+  },
+  "version": "2.8.0"
+}
