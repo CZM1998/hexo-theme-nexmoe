@@ -26,7 +26,9 @@
   
   <%- partial('_partial/_post/tag') %>
 
+  <% if (page.prev || page.next) { %>
   <%- partial('_partial/_post/prev_next.ejs') %>
+  <% } %>
 
   <div class="nexmoe-post-footer">
     <%- theme.comment ? partial('_partial/comment') : '' %>
